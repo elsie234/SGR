@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, red, yellow);
+  align-items: center;
+}
+
+.svg {
+  padding-left: 30px;
+  position: absolute;
+}
+
+#train-body {
+  position: absolute;
+  bottom: 8%;
+  right: 24%;
+}
+
+.new-surface {
+  height: 140px;
+  width: 500%;
+  background: url("/assets/Img_02.png");
+  display: block;
+  position: absolute;
+  bottom: 28.6%;
+  left: 0%;
+  background-repeat: repeat-x;
+}
+.surface {
+  height: 140px;
+  width: 100%;
+  background: url("/assets/Img_02.png");
+
+  position: absolute;
+  bottom: 28.6%;
+  left: 0%;
+  background-repeat: repeat-x;
+}
+#to-nairobi {
+  animation: nairobi-sign 6s ease-in;
+  opacity: 0;
+}
+@keyframes nairobi-sign {
+  from {
+    opacity: 100;
+    transform: translateX(-500px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(700px);
+  }
+}
+/*#wheel-1,
+#wheel-2,
+#wheel-3,
+#wheel-4,
+#wheel-5,
+#wheel-6,
+#wheel-7,
+#wheel-8,
+#wheel-9,
+#wheel-10,
+#wheel-11,
+#wheel-12 {
+  opacity: 100;
+  animation: suspension 300ms linear infinite;
+}*/
+
+#road-short {
+  animation: road 2s linear infinite;
+}
+@keyframes road {
+  100% {
+    transform: translateX(710px);
+  }
+}
+
+@keyframes suspension {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  0% {
+    transform: translate(-1px);
+  }
+}
+
+.moveRight {
+  animation: road 3s linear infinite;
+}
+
+.suspension {
+  animation: suspension 300ms linear infinite;
+}
+
+.voi {
+  opacity: 0;
+}
+
+#mtito-andei {
+  opacity: 0;
+}
+
+.nairobi {
+  opacity: 0;
+}
+
+.signPost {
+  animation: sign-post 7s ease-in;
+}
+
+.nairobiStation {
+  animation: nairobi-station 16s ease-in;
+}
+
+@keyframes sign-post {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes nairobi-station {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
